@@ -4,9 +4,10 @@ const nextConfig: NextConfig = {
     /* config options here */
     output: "export",
     basePath: "/tensyoku-web",
+    assetPrefix: "/tensyoku-web",
+
     images: {
-        loader: "custom",
-        loaderFile: "./custom-image-loader.ts",
+        unoptimized: true,
     },
 };
 
