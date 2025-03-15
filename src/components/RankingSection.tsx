@@ -50,7 +50,7 @@ export default function RankingSection({ companies }: { companies: RankingCompan
                             {company.features.map((feature, idx) => (
                                 <p
                                     key={idx}
-                                    className="point good text-[14px] mb-[4px] leading-[1.5] pl-[28px] relative before:content-[''] before:w-[20px] before:h-[20px] before:block before:absolute before:bg-no-repeat before:bg-contain before:left-0 before:top-0 before:bg-[url('/img/bi_check-all.svg')]"
+                                    className="point good text-[14px] mb-[4px] leading-[1.5] pl-[28px] relative before:content-[''] before:w-[20px] before:h-[20px] before:block before:absolute before:bg-no-repeat before:bg-contain before:left-0 before:top-0 before:bg-[url('./img/bi_check-all.svg')]"
                                 >
                                     {feature}
                                 </p>
@@ -97,12 +97,12 @@ export default function RankingSection({ companies }: { companies: RankingCompan
                             </div>
 
                             <p className="text-[14px] leading-[1.5] text-[#333] mb-[12px]">
-                                <Image src="/img/money.svg" alt="" width={16} height={16} className="w-[16px] h-[16px] mr-[4px] inline-block" />
+                                <Image src="./img/money.svg" alt="" width={16} height={16} className="w-[16px] h-[16px] mr-[4px] inline-block" />
                                 {company.featuredJob.salary}
                             </p>
 
                             <p className="text-[14px] leading-[1.5] text-[#333] mb-[12px]">
-                                <Image src="/img/time.svg" alt="" width={16} height={16} className="w-[16px] h-[16px] mr-[4px] inline-block" />
+                                <Image src="./img/time.svg" alt="" width={16} height={16} className="w-[16px] h-[16px] mr-[4px] inline-block" />
                                 {company.featuredJob.workHours}
                             </p>
 

@@ -28,7 +28,7 @@ export default function OfficialSiteButton({ link, className = "" }: OfficialSit
                 }}
             ></span>
             公式サイトを見る
-            <Image src="/img/link.svg" alt="" width={14} height={14} className="w-[14px] h-[14px] ml-[8px] inline-block" />
+            <Image src="./img/link.svg" alt="" width={14} height={14} className="w-[14px] h-[14px] ml-[8px] inline-block" />
         </Link>
     );
 }
