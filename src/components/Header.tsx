@@ -7,7 +7,7 @@ export default function Header() {
             <div className="content h-[64px] md:h-[64px] flex items-center mx-auto max-w-[1280px]">
                 <Link href="/" className="nuxt-link-active">
                     <Image
-                        src="./img/logo.5053282.svg"
+                        src="/img/logo.5053282.svg"
                         alt="ヘッダーの画像"
                         width={240}
                         height={30}
