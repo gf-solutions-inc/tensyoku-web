@@ -27,6 +27,7 @@ export default function RootLayout({
                 fill
                 className="object-cover m-0 p-0"
                 style={{
+                    position: "fixed",
                     zIndex: "-100",
                 }}
                 priority
