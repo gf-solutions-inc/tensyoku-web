@@ -21,7 +21,16 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ja">
-            <Image src={`./img/background.webp`} alt="背景画像" fill className="object-cover m-0 p-0" priority />
+            <Image
+                src={`./img/background.webp`}
+                alt="背景画像"
+                fill
+                className="object-cover m-0 p-0"
+                style={{
+                    zIndex: "-100",
+                }}
+                priority
+            />
             <body className={`${notoSansJP.className} antialiased`}>{children}</body>
         </html>
     );
