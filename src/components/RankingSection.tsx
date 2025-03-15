@@ -48,10 +48,16 @@ export default function RankingSection({ companies }: { companies: RankingCompan
                         <div>
                             {/* 特徴 */}
                             {company.features.map((feature, idx) => (
-                                <p
-                                    key={idx}
-                                    className="point good text-[14px] mb-[4px] leading-[1.5] pl-[28px] relative before:content-[''] before:w-[20px] before:h-[20px] before:block before:absolute before:bg-no-repeat before:bg-contain before:left-0 before:top-0 before:bg-[url('./img/bi_check-all.svg')]"
-                                >
+                                <p key={idx} className="point good text-[14px] mb-[4px] leading-[1.5] pl-[28px] relative">
+                                    <span className="absolute left-0 top-0 w-[20px] h-[20px]">
+                                        <Image
+                                            src={`./img/bi_check-all.svg`} // basePathを使う
+                                            alt="" // 空のalt属性（装飾的な画像のため）
+                                            width={20}
+                                            height={20}
+                                            className="block" // または inline-blockなど。必要に応じて。
+                                        />
+                                    </span>
                                     {feature}
                                 </p>
                             ))}
