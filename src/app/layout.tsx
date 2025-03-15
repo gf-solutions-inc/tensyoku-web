@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import "./styles.css";
+import Image from "next/image";
 
 const notoSansJP = Noto_Sans_JP({
     subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ja">
+            <Image src={`./img/background.webp`} alt="背景画像" fill className="object-cover m-0 p-0" priority />
             <body className={`${notoSansJP.className} antialiased`}>{children}</body>
         </html>
     );

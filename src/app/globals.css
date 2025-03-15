@@ -7,10 +7,6 @@
 
 body {
     color: var(--foreground);
-    background-image: url("./img/background.webp");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
